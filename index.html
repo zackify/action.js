@@ -1,0 +1,29 @@
+<script src="action.js"></script>
+<style src="test.css"></style>
+<script type="text/javascript">
+window.onload = function(){
+	var callback = function(msg,form){
+		console.log(msg,form)
+	}
+	var forms = document.querySelectorAll('form')
+		for(var i=0; i < forms.length; i++){
+			var form = forms[i]
+			action(form,callback)
+		}
+}
+
+</script>
+<body>
+<form action="test" method="post" data-redirect="/new">
+<input type="text" name="test" placeholder="test" />
+<input type="submit" value="Submit" />
+
+</form>
+<form action="test" method="post" data-redirect="/old">
+<input type="text" name="new" placeholder="test" />
+<input type="text" name="old" placeholder="test2" />
+
+<input type="submit" value="Submit" />
+
+</form>
+</body>
