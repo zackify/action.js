@@ -6,7 +6,15 @@ inside of `window.onload` or `$(document).ready`:
 
 ```
 action(form,callback)
+```
+The form variable is the actual form dom node. In the example index, I just do this to grab every form and pass it to action.js
 
+```
+var forms = document.querySelectorAll('form')
+for(var i=0; i < forms.length; i++){
+	var form = forms[i]
+	action(form,callback)
+}
 ```
 The callback will be called on at certain points, for now it will look like this
 
