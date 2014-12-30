@@ -1,6 +1,11 @@
 action.js
 =========
 
+#### Install via Bower
+```
+bower install zackify-action
+```
+
 Action.js is for easily turning your regular, lame form posts (and soon gets) into ajax calls. It's so easy to use 
 inside of `window.onload` or `$(document).ready`:
 

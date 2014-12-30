@@ -1,0 +1,25 @@
+{
+  "name": "action.js",
+  "main": "action.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zackify/action.js",
+  "authors": [
+    "Zach <zackify@gmail.com>"
+  ],
+  "description": "ajaxify your form requests",
+  "keywords": [
+    "ajax",
+    "form",
+    "input",
+    "submit",
+    "request"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
